@@ -32,11 +32,10 @@ a {
   color: black;
   font-size: 24px;
 }
-#logo-right {
+/* #logo-right {
   flex: 1;
   align-self: flex-start;
-  padding-left: 5px;
-}
+} */
 
 #searchBar {
   background-color: white;
@@ -61,7 +60,7 @@ main {
   margin: 20px;
   padding: 20px;
   gap: 20px;
-  width: 90svw;
+  width: 80%;
   height: 90svh;
   display: flex;
   justify-content: space-between;
@@ -80,13 +79,15 @@ main {
 #midDiv2 {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
 
 #bottomDiv1 {
   font-size: 20px;
+  font-weight: 300;
+  line-height: 40px;
 }
 
 #bottomDiv2 {
@@ -95,7 +96,7 @@ main {
 #buttonOne {
   border: none;
   border-radius: 20px;
-  background-color: burlywood;
+  background-color: rgb(185, 137, 73);
   font-size: 24px;
   color: white;
   width: 150px;
@@ -106,8 +107,9 @@ main {
 #buttonOne:hover {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.277);
   transition: 0.4s;
-  width: 160px;
+  width: 170px;
   height: 60px;
   font-size: 26px;
   text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.277);
+  cursor: pointer;
 }
