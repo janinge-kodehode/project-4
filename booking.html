@@ -16,5 +16,36 @@
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </header>
+    <main id="bookingMain">
+      <div id="headerDiv"><h1>Booking options</h1></div>
+      <div id="options">
+        <div class="options">
+          <h1>Mosaic art - $40</h1>
+          <p>Includes: Frame, wooden board (A4), coloured stones, rubber</p>
+          <button class="orderBtn" onclick="order()">Order</button>
+        </div>
+        <div class="options" onclick="order()">
+          <h1>Water painting - $20</h1>
+          <p>
+            Includes: Frame, watercolor paper with template, watercolor paints,
+            brushes
+          </p>
+          <button class="orderBtn">Order</button>
+        </div>
+        <div class="options">
+          <h1>Canvas painting - $30</h1>
+          <p>
+            Includes: Frame, acrylic paper with template, acrylic paints,
+            brushes
+          </p>
+          <button class="orderBtn" onclick="order()">Order</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      function order() {
+        alert("Your order has been placed.");
+      }
+    </script>
   </body>
 </html>
