@@ -1,27 +1,26 @@
+/* Reset the html margin for more control */
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  max-width: 1440px;
-  height: 100svh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 header {
   width: 100svw;
   height: 70px;
   background-color: #f6e5b3;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
 
 ul {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   gap: 20px;
+  padding: 20px;
 }
 
 li {
@@ -31,8 +30,84 @@ li {
 a {
   text-decoration: none;
   color: black;
+  font-size: 24px;
 }
 #logo-right {
-  display: flex;
+  flex: 1;
   align-self: flex-start;
+  padding-left: 5px;
+}
+
+#searchBar {
+  background-color: white;
+  width: 1000px;
+  height: 35px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  border: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#mainDiv {
+  background-color: #f6e5b3;
+  margin: 20px;
+  padding: 20px;
+  gap: 20px;
+  width: 90svw;
+  height: 90svh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.075);
+}
+
+#midDiv1 img {
+  max-width: 550px;
+  max-width: 550px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.225);
+}
+
+#midDiv2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#bottomDiv1 {
+  font-size: 20px;
+}
+
+#bottomDiv2 {
+}
+
+#buttonOne {
+  border: none;
+  border-radius: 20px;
+  background-color: burlywood;
+  font-size: 24px;
+  color: white;
+  width: 150px;
+  height: 50px;
+  transition: 0.4s;
+}
+
+#buttonOne:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.277);
+  transition: 0.4s;
+  width: 160px;
+  height: 60px;
+  font-size: 26px;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.277);
 }
